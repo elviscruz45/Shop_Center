@@ -9,7 +9,3 @@ def Shop(request):
     return render(request,"WebCenter/shop.html",)
 
 
-
-def Contact(request):
-    return render(request,"WebCenter/contact.html",)
-    

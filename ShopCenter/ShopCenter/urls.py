@@ -25,6 +25,6 @@ urlpatterns = [
     path('', include("WebCenter.urls")),
     path('services/', include("services.urls")),
     path('blog/', include("blog.urls")),
-
+    path('contact/', include("contact.urls")),
 ]
 
