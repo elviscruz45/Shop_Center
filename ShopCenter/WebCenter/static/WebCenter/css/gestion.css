@@ -282,3 +282,15 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+.linksCategories{
+
+color:rgb(234, 211, 211);
+text-decoration:none;
+}
+
+.linksCategories:hover{
+
+  color:white;
+  text-decoration:underline;
+  }
