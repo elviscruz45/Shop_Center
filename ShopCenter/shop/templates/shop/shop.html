@@ -1,0 +1,43 @@
+{% extends "WebCenter/base.html" %}
+
+{% load static %}
+
+{% block content%}
+
+
+
+<div class="container">
+
+<div class="row">
+    
+{% for product in products %}
+
+<div class="col-md-3">
+
+    <div class="card" style="width:100%; margin: 5px 5px;">
+
+    <img src="{{product.image.url}}" class="card-img-top" alt="">
+
+        <div class="card-body" style="text-align:center">
+
+            <h6 class="card-title"> {{product.name}}</h6>
+            <p class="card-text">{{product.price}}&nbsp; USD</p>
+            <p class="card-text">&nbsp;{{product.cat}}</p>
+
+        </div>
+
+    </div><!-- class: card-->
+
+
+</div><!-- class: col-->
+
+
+
+
+{%endfor%}
+
+</div>
+</div>
+
+{% endblock%}
+
