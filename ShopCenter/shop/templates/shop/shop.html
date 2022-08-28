@@ -8,13 +8,17 @@
 
 <div class="container">
 
+    <div style="float:right ">
+        <p style="color:white"> Testing</p>
+    </div>
+
 <div class="row">
     
 {% for product in products %}
 
 <div class="col-md-3">
 
-    <div class="card" style="width:100%; margin: 5px 5px;">
+    <div class="card" style="width:100%; margin: 10px 10px;">
 
     <img src="{{product.image.url}}" class="card-img-top" alt="">
 
@@ -25,9 +29,14 @@
             <p class="card-text">&nbsp;{{product.cat}}</p>
 
         </div>
+        <div class="card-footer text-center">
+            <a href="#"> Add to Cart </a>
+        
+        </div>
+    
 
     </div><!-- class: card-->
-
+  
 
 </div><!-- class: col-->
 
