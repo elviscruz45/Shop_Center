@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .car import Car
+from marketcar.car import Car
 from shop.models import Product
 from django.shortcuts import redirect
 
@@ -27,3 +27,4 @@ def clean_product(request,product_id):
     car=Car(request)
     car.clean_car()
     return redirect("shop")
+
