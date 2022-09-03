@@ -23,3 +23,4 @@ def Contact(request):
                 return redirect("/contact/?novalid")
 
     return render(request,"contact/contact.html",{"form":form_contact})
+ 

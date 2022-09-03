@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "crispy_forms",
+    "authentication.apps.AuthenticationConfig",
     "marketcar.apps.MarketcarConfig",
     "shop.apps.ShopConfig",
     "contact.apps.ContactConfig",
@@ -144,3 +146,6 @@ EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER="teseosoftwarecompany@gmail.com"
 EMAIL_HOST_PASSWORD="qcfgbztrorpeuhwo"
+
+
+CRISPY_TEMPLATE_PACK="bootstrap4"
