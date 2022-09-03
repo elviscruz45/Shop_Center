@@ -3,11 +3,12 @@ class Car:
         self.request=request
         self.session=request.session
         car=self.session.get("car")
+        
         if not car:
             car=self.session["car"]={}
         #else:
         self.car=car
-    
+
     def add(self,product):
         if(str(product.id) not in self.car.keys()):
             self.car[product.id]={
@@ -25,7 +26,7 @@ class Car:
                     break
         
         self.save_car()
-    
+
     def save_car(self):
         self.session["car"]=self.car
         self.session.modified=True

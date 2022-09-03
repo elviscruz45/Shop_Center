@@ -1,15 +1,5 @@
-class Student:
-    count = "marron"
-    def __init__(self):
-        self.car= "carro"
+hola={"casa":1,"masa":324,"mascota":23}
 
 
-
-
-std1=Student()
-
-print(std1.count)
-
-print("------------------------")
-
-print(std1.car)
+print(hola.get("casa"))
+print(hola.get("casaca"))

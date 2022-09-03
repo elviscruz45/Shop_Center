@@ -9,9 +9,18 @@
 <div class="container">
 
     <div style="float:right; ">
-        {% include "car/widget.html"  %}
+
+        {% if request.user.is_authenticated%}
+            {% include "car/widget.html"  %}
+        {% else %}
+            <div class="alert alert-danger text-center">  Login to se the cart Market </div>
+        {% endif%}
     </div>
 
+
+
+
+ 
 <div class="row">
 
 {% for product in products %}
