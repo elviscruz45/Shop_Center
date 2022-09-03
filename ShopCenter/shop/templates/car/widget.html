@@ -44,8 +44,15 @@
             <td colspan="3">
                 Total: {{total_cart_amount}} USD
             </td>
-
         </tr>
+
+        {% if request.session.car.items %}
+        <tr>
+            <td colspan="3" style="text-align:center">
+                <a href="#" class="btn btn-success"> Request </a>
+            </td>
+        </tr>
+        {% endif %}
     </tfoot>
 </table>
 

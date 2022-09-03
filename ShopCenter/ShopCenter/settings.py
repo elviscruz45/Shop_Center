@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "delivery.apps.DeliveryConfig",
     "crispy_forms",
     "authentication.apps.AuthenticationConfig",
     "marketcar.apps.MarketcarConfig",
